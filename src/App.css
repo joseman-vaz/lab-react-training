@@ -46,16 +46,17 @@
   display: flex;
   flex-direction: column;
   align-content: center;
+  justify-content: center;
   margin: 10px auto;
   width: 400px;
   border-radius: 10px;
+  height: 200px;
 }
 .individual_card {
   display: flex;
   flex-direction: row;
   border: #282c34 solid;
   margin: 2px;
-
   align-content: center;
 }
 
@@ -144,4 +145,47 @@
 .driver-info p,
 .driver-info h2 {
   margin: 0;
+}
+
+.square {
+  width: 50px;
+  height: 50px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.even {
+  background-color: red;
+}
+
+.facebook-text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-size: 1.5rem;
+  margin-left: 10px;
+}
+.facebook_text_container p {
+  margin: 1px;
+  text-align: left;
+}
+.facebook_text_container span {
+  font-weight: bold;
+}
+.facebook-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+}
+
+.facebook-individual-card {
+  display: flex;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+.highlight {
+  background-color: #455eb5;
 }
